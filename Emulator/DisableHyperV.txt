@@ -1,0 +1,8 @@
+The fastest way, possibly the only way that I have found was to, open Hyper-V manager and "stop service" on the right panel, and then at an elevated command prompt I entered what you see below.
+Code:
+ 
+Disable Hyper-v at an elevated command prompt, and reboot.
+bcdedit /set hypervisorlaunchtype off
+ 
+To enable Hyper-v to use Hyper-V again, at an elevated command prompt, and reboot
+bcdedit /set hypervisorlaunchtype auto
