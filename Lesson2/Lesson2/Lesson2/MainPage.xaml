@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lesson2"
+             x:Class="Lesson2.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Page1" Clicked="Button_Clicked" />
+            <Button Text="Page2" Clicked="Button_Clicked_1" />
+            <Button Text="Page3" Clicked="Button_Clicked_2" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
