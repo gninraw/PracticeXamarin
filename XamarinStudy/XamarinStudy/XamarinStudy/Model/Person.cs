@@ -11,5 +11,6 @@ namespace XamarinStudy.Model
         public string Name { get; set; }
         public String Address { get; set; }
         public String Phone { get; set; }
+        public String Image { get; set; }
     }
 }
