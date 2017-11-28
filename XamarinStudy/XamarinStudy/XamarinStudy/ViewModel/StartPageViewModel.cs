@@ -12,19 +12,53 @@ namespace XamarinStudy.ViewModel
     public class StartPageViewModel
     {
         public String Title { get; set; }
-        public ICommand Clicked { get; set; }
+
+        public ICommand SampleClickCommand { get; set; }
+        
         public INavigation Navigation { get; set; }
 
         public StartPageViewModel(StartPage startPage)
         {
             Title = "StartPage !!!!!!";
-            Clicked = new Command(Sample1Clicked);
+            SampleClickCommand = new Command(SampleClicked);
             Navigation = startPage.Navigation;
         }
 
-        private void Sample1Clicked(object obj)
+        private void SampleClicked(object obj)
         {
-            Navigation.PushAsync(new Sample1());
+            switch (obj)
+            {
+                case "sample1":
+                    Navigation.PushAsync(new Sample1());
+                    break;
+
+                case "sample2":
+                    Navigation.PushAsync(new Sample2());
+                    break;
+
+                case "sample3":
+                    Navigation.PushAsync(new Sample3());
+                    break;
+
+                default:
+                    break;
+            }
+
+            
+
+            //string name = obj as string;
+            //if(name == "sample1")
+            //{
+            //    Navigation.PushAsync(new Sample1());
+            //}
+            //else if (name == "sample2")
+            //{
+            //    Navigation.PushAsync(new Sample2());
+            //}
+            //else
+            //{
+
+            //}
         }
     }
 }

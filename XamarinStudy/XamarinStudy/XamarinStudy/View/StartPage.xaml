@@ -7,12 +7,14 @@
     <ContentPage.Content>
         <StackLayout>
             <!--버튼 이벤트 클릭-->
-            <Button Text="Sample1" Command="{Binding Clicked}" />
+            <Button Text="Sample1" Command="{Binding SampleClickCommand}" CommandParameter="sample1" />
+            <Button Text="Sample2" Command="{Binding SampleClickCommand}" CommandParameter="sample2" />
+            <Button Text="Sample3" Command="{Binding SampleClickCommand}" CommandParameter="sample3" />
             
             <Button Text="Sample1_Behavior">
                 <Button.Behaviors>
                     <behavior:EventHandlerBehavior EventName="Clicked">
-                        <behavior:InvokeCommandAction Command="{Binding Clicked}"  />
+                        <behavior:InvokeCommandAction Command="{Binding SampleClickCommand}"  />
                     </behavior:EventHandlerBehavior>
                 </Button.Behaviors>
             </Button>
