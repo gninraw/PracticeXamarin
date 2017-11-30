@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinStudy.View.Sample4"
+             x:Name="root">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="텍스트를 입력하세요..." 
+                   Text="{Binding Text}" />
+            <Label Text="{Binding Text}" />
+            <Label Text="{Binding Text}" />
+            <Button Command="{Binding SetTextCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

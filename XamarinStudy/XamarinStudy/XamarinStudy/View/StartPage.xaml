@@ -10,7 +10,8 @@
             <Button Text="Sample1" Command="{Binding SampleClickCommand}" CommandParameter="sample1" />
             <Button Text="Sample2" Command="{Binding SampleClickCommand}" CommandParameter="sample2" />
             <Button Text="Sample3" Command="{Binding SampleClickCommand}" CommandParameter="sample3" />
-            
+            <Button Text="Sample4" Command="{Binding SampleClickCommand}" CommandParameter="sample4" />
+
             <Button Text="Sample1_Behavior">
                 <Button.Behaviors>
                     <behavior:EventHandlerBehavior EventName="Clicked">

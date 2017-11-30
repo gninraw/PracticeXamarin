@@ -40,6 +40,10 @@ namespace XamarinStudy.ViewModel
                     Navigation.PushAsync(new Sample3());
                     break;
 
+                case "sample4":
+                    Navigation.PushAsync(new Sample4());
+                    break;
+
                 default:
                     break;
             }
